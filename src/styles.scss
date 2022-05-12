@@ -1,0 +1,124 @@
+body {
+  background-color: #f8fafb;
+
+  font-family: 'Inter', sans-serif;
+
+  a {
+  list-style: none;
+  text-decoration: none;
+  }
+
+  ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ordered-list li {
+    counter-increment: inst;
+    color: #091f30;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  .ordered-list li::before {
+    content: counter(inst);
+    margin-left: 5px;
+    margin-right: 24px;
+    color: #55c595;
+    font-weight: 700;
+  }
+
+  .unordered-list li {
+    color: #091f30;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  .unordered-list li::before {
+  content: '•';
+    list-style: inside;
+    margin-left: 5px;
+    margin-right: 24px;
+    color: #55c595;
+    font-weight: 700;
+  }
+
+  .box-description {
+    margin: 16px 0;
+    line-height: 1.56;
+    font-size: 16px;
+    color: #091f30;
+    font-weight: 400;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  .blockquote {
+  background-position: top;
+  p {
+  padding-top: 30px;
+  text-align: center;
+  }
+  content: '_ ';
+  background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMzInIGhlaWdodD0nMjQnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTE1LjA3MyAwSDQuMjgzdjcuMTk3YzAgNS41NzktMi4wMjQgOS42NC00LjI4MyAxMy4xMzlMNi4zNCAyNGM0Ljc1NC0zLjg5NSA4LjczMy0xMC44MjggOC43MzMtMTYuODdWMFpNMzIgMEgyMS4yMXY3LjE5N2MwIDUuNTc5LTIuMDI0IDkuNjQtNC4yODMgMTMuMTM5TDIzLjI2NyAyNEMyOC4wMiAyMC4xMDUgMzIgMTMuMTcyIDMyIDcuMTNWMFonIGZpbGw9JyM1NUM1OTUnLz48L3N2Zz4=');
+  }
+
+  .table {
+
+  &-wrapper {
+    background: #fff;
+    border-radius: 8px;
+  }
+
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &__left {
+    padding: 16px 5px;
+      font-size: 14px;
+      line-height: 1.62;
+      font-weight: 700;
+      width: 40%;
+      text-align: left;
+    }
+
+    &__right {
+    padding: 16px 5px;
+      font-size: 14px;
+      line-height: 1.62;
+      width: 60%;
+      text-align: right;
+      font-weight: 500;
+    }
+  }
+}
+
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
