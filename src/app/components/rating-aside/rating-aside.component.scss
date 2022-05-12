@@ -1,0 +1,43 @@
+.rating-aside {
+
+  &__wrapper {
+    background: #fff;
+    border: 1px solid rgba(9, 31, 48, .08);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgb(9 31 48 / 8%);
+    margin-bottom: 8px;
+  }
+
+  &__exchange {
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+border-bottom: 1px solid rgba(9,31,48,.09);
+padding: 8px 16px 12px;
+font-weight: 700;
+    }
+
+
+    &-title {
+      color: #091f30;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    &-right {
+    display: flex;
+    flex-direction: column;
+
+    img {
+            height: 48px;
+    width: 120px;
+    }
+
+    }
+
+  }
+
+}
+
