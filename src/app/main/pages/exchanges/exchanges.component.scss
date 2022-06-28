@@ -1,0 +1,179 @@
+p { margin: 0}
+
+.exchanges-menu {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__item {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #d7def0;
+    box-shadow: 0 -1px 2px rgb(24 28 71 / 4%), 0 2px 4px rgb(24 28 71 / 10%);
+    border-radius: 10px;
+
+    align-items: center;
+    width: 1040px;
+    vertical-align: middle;
+
+    &-top-wrap {
+      display: flex;
+
+      &__left-best {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #395bb6;
+        background: #eef2fe;
+        border-radius: 8px;
+        padding: 11px 12px;
+        margin-bottom: 12px;
+        display: inline-block;
+        word-break: break-word;
+        align-self: flex-start;
+      }
+
+      &__left-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #333;
+        word-break: break-word;
+        margin-bottom: 3px;
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.item-content-wrapper {
+  display: flex;
+
+  &__facts-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+
+    &__fact {
+      color: #333;
+      padding: 10px 20px;
+      border-right: 1px solid #e2e2e2;
+      width: 100%;
+      overflow: hidden;
+      word-break: break-word;
+      display: flex;
+      flex-direction: column;
+      min-width: 215px;
+
+      &:last-child {
+        border: 0;
+      }
+
+      &__title {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 12px;
+        opacity: .6;
+        height: 36px;
+      }
+    }
+  }
+}
+
+.card-rating {
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 2px rgb(119 115 103 / 4%);
+  border-radius: 108px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 180px;
+  cursor: default;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+
+  &__left-wrap {
+    word-break: initial;
+
+    &__rating-num {
+      font-family: EuclidCircularB, sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 41px;
+      letter-spacing: -1px;
+      color: #333;
+    }
+  }
+
+  &__right-wrap {
+
+    padding-left: 8px;
+
+
+    &__stars-wrapper {
+      background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOCAxLjMzM2wyLjA2IDQuMTczIDQuNjA3LjY3NC0zLjMzMyAzLjI0Ni43ODYgNC41ODdMOCAxMS44NDZsLTQuMTIgMi4xNjcuNzg3LTQuNTg3TDEuMzM0IDYuMThsNC42MDYtLjY3NEw4IDEuMzMzeiIgc3Ryb2tlPSIjREJEQkRCIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=) repeat-x 0 0;
+      width: 100px;
+      margin-bottom: 5px;
+      margin-left: 18px;
+
+      .stars {
+        display: block;
+        height: 16px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOCAxLjMzM2wyLjA2IDQuMTczIDQuNjA3LjY3NC0zLjMzMyAzLjI0Ni43ODYgNC41ODdMOCAxMS44NDZsLTQuMTIgMi4xNjcuNzg3LTQuNTg3TDEuMzM0IDYuMThsNC42MDYtLjY3NEw4IDEuMzMzeiIgZmlsbD0iI0Y3Qzc0OCIgc3Ryb2tlPSIjRjdDOTRBIiBzdHJva2Utd2lkdGg9IjEuMzYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+      }
+    }
+
+    &__logo-wrapper {
+      padding-right: 28px;
+      text-align: center;
+    }
+
+  }
+}
+
+
+.right-exchange-img {
+  width: 125px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}
+
+.right-exchange-read-more {
+  box-sizing: border-box;
+  background: #35b782;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  min-height: 64px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .2s ease;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: -10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #32a274;
+  }
+}
