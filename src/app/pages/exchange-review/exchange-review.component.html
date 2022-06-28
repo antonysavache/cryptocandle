@@ -1,0 +1,63 @@
+<div class="review-wrapper">
+  <div class="review-head-wrapper">
+
+    <div class="review-head">
+      <h1 class="review-head__header">
+        {{exchangeData.reviewHead}}
+      </h1>
+
+      <div class="review__top-info">
+    <span>
+      <div class="review__top-info__stars">
+        <mat-icon class="review__top-info__stars-icon-star filled"
+                  [ngClass]="setClassToStar(exchangeData.numOfStars)">star</mat-icon>
+        <mat-icon class="review__top-info__stars-icon-star filled"
+                  [ngClass]="setClassToStar(exchangeData.numOfStars)">star</mat-icon>
+        <mat-icon class="review__top-info__stars-icon-star filled"
+                  [ngClass]="setClassToStar(exchangeData.numOfStars)">star</mat-icon>
+        <mat-icon class="review__top-info__stars-icon-star filled"
+                  [ngClass]="setClassToStar(exchangeData.numOfStars)">star</mat-icon>
+        <mat-icon class="review__top-info__stars-icon-star"
+                  [ngClass]="setClassToStar(exchangeData.numOfStars)">star</mat-icon>
+      </div>
+
+      <div class="review__top-info__star-rating">
+        <span class="review__top-info__star-rating-current-rating">{{exchangeData.rating}}</span> / 5
+      </div>
+    </span>
+
+
+        <img [src]="exchangeData.headInfoImg">
+      </div>
+      <div>
+        <a [href]="exchangeData.registrationLink" class="review__top-info__regis-wrapper"><span>Registration</span></a>
+      </div>
+    </div>
+
+    <app-pros-and-cons>
+    </app-pros-and-cons>
+
+    <app-simple-box [markupData]="characteristic"></app-simple-box>
+
+  </div>
+  <p class="review__top-description">
+    {{exchangeData.topDescription}}
+  </p>
+
+  <app-simple-box [markupData]="data" *ngFor="let data of simpleBoxMarkupData"></app-simple-box>
+
+
+
+
+
+
+
+
+
+
+
+  <app-rating-aside></app-rating-aside>
+
+</div>
+
+

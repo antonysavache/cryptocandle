@@ -1,0 +1,39 @@
+<div class="pros-and-cons-wrapper">
+
+  <div class="pros-content">
+    <div class="header-area">
+    <span class="header-area__icon-wrapper-thumb_up">
+      <mat-icon>thumb_up</mat-icon>
+    </span>
+      <h3>Плюсы</h3>
+    </div>
+
+    <ul>
+      <li *ngFor="let pros of data.pros" class="pros-content__pros-area">
+      <span>
+        <mat-icon>add</mat-icon>
+        {{ pros }}
+      </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cons-content">
+    <div class="header-area">
+    <span class="header-area__icon-wrapper-thumb_down">
+      <mat-icon>thumb_down</mat-icon>
+    </span>
+      <h3>Минусы</h3>
+    </div>
+
+    <ul>
+      <li *ngFor="let cons of data.cons" class="cons-content__cons-area">
+      <span>
+                <mat-icon>remove</mat-icon>
+        {{ cons }}
+      </span>
+      </li>
+    </ul>
+  </div>
+
+</div>
