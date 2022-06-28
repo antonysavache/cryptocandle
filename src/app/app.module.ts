@@ -1,15 +1,17 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {ExchangeReviewComponent} from './pages/exchange-review/exchange-review.component';
-import {ProsAndConsComponent} from './components/pros-and-cons/pros-and-cons.component';
-import {SimpleBoxComponent} from './components/simple-box/simple-box.component';
-import {RatingAsideComponent} from './components/rating-aside/rating-aside.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import { TwoColumnTableComponent } from './components/two-column-table/two-column-table.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ExchangeReviewComponent } from './main/pages/exchange-review/exchange-review.component';
+import { ProsAndConsComponent } from './main/components/pros-and-cons/pros-and-cons.component';
+import { SimpleBoxComponent } from './main/components/simple-box/simple-box.component';
+import { RatingAsideComponent } from './main/components/rating-aside/rating-aside.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TwoColumnTableComponent } from './main/components/two-column-table/two-column-table.component';
+import { SharedModule } from "./shared/shared.module";
+import { HomeComponent } from './main/pages/home/home.component';
+import { ExchangesComponent } from './main/pages/exchanges/exchanges.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { TwoColumnTableComponent } from './components/two-column-table/two-colum
     ProsAndConsComponent,
     SimpleBoxComponent,
     RatingAsideComponent,
-    TwoColumnTableComponent
+    TwoColumnTableComponent,
+    HomeComponent,
+    ExchangesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

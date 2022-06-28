@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TwoTableDataInterface} from '../../shared/interfaces/two-table-data.interface';
+import {TwoTableDataInterface} from '../../../shared/interfaces/two-table-data.interface';
 
 @Component({
   selector: 'app-two-column-table',

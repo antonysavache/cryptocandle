@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MarkUpDataInterface} from '../../shared/interfaces/mark-up-data.interface';
+import {MarkUpDataInterface} from '../../../shared/interfaces/mark-up-data.interface';
 
 @Component({
   selector: 'app-exchange-review',

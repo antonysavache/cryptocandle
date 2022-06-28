@@ -1,7 +1,35 @@
+$sizes: ("sm":480px, "md":768px, "lg":1280px);
+
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media only screen and (#{$minmax}-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
+
 body {
   background-color: #f8fafb;
 
   font-family: 'Inter', sans-serif;
+
+  h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    line-height: 1.14;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .mat-typography p {
+    margin: 0;
+  }
 
   a {
   list-style: none;
@@ -104,15 +132,28 @@ body {
   }
 }
 
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media("min", "sm") {
+      max-width: 480px;
+    }
+
+    @include media("min", "md") {
+      max-width: 920px;
+    }
+
+    @include media("min", "lg") {
+      max-width: 1200px;
+    }
+  }
+
 }
 
-h1, h2, h3, h4 {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 700;
-  line-height: 1.14;
-}
 
 html, body {
   height: 100%;
